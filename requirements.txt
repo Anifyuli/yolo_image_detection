@@ -162,6 +162,7 @@ markupsafe==3.0.2
 matplotlib==3.10.3
     # via
     #   yolo-image-detection (pyproject.toml)
+    #   seaborn
     #   ultralytics
 matplotlib-inline==0.1.7
     # via
@@ -194,11 +195,13 @@ notebook-shim==0.2.4
     #   notebook
 numpy==2.2.6
     # via
+    #   yolo-image-detection (pyproject.toml)
     #   contourpy
     #   matplotlib
     #   opencv-python
     #   pandas
     #   scipy
+    #   seaborn
     #   torchvision
     #   ultralytics
     #   ultralytics-thop
@@ -218,7 +221,9 @@ packaging==25.0
     #   matplotlib
     #   nbconvert
 pandas==2.2.3
-    # via ultralytics
+    # via
+    #   seaborn
+    #   ultralytics
 pandocfilters==1.5.1
     # via nbconvert
 parso==0.8.4
@@ -303,6 +308,8 @@ rpds-py==0.25.1
     #   referencing
 scipy==1.15.3
     # via ultralytics
+seaborn==0.13.2
+    # via yolo-image-detection (pyproject.toml)
 send2trash==1.8.3
     # via jupyter-server
 setuptools==80.9.0
